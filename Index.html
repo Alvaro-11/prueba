@@ -4,6 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QSL Consultores</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="img/QSL.png" />
+  <!-- Bootstrap Icons-->   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+  <!-- SimpleLightbox plugin CSS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
   <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -14,108 +25,459 @@
     rel="stylesheet"
   />
 </head>
-<body class="font-sans">
-  <!-- Header -->
-  <header class="bg-primary text-white py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <img
-        src="img/blanco-logo.png"
-        alt="QSL logo"
-        class="img-fluid"
-        width="140"
-        height="50"
-      />
-      <nav>
-        <a href="#" class="text-white text-decoration-none me-3">Inicio</a>
-        <a href="#" class="text-white text-decoration-none me-3">Nosotros</a>
-        <a href="#" class="text-white text-decoration-none me-3">Servicios</a>
-        <a href="#" class="text-white text-decoration-none">Contactosss</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="position-relative">
-    <img
-      src="img/fondo-avion.png"
-      alt="Aeropuerto"
-      class="img-fluid w-100"
-      style="height: 400px; object-fit: cover;"
-    />
-    <div
-      class="position-absolute top-50 start-50 translate-middle text-center"
-    >
-      <img
-        src="img/sinfondo.png"
-        alt="QSL Consultores Logo"
-        class="img-fluid"
-        width="300"
-        height="100"
-      />
-    </div>
-  </section>
-
-  <!-- About Us Section -->
-  <div class="bg-primary text-white">
-    <div class="container py-3"></div>
-    <section class="py-5 bg-white">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 mb-4 mb-md-0">
-            <img
-              src="img/fondo-avion.png"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-md-6 text-center text-md-start">
-            <h2 class="text-primary mb-4">Acerca de Nosotros</h2>
-            <p class="mb-4 text-black">
-              Somos una empresa especializada en asesoramiento y consultoría de
-              proyectos aeroportuarios, enfocada en cumplir los requerimientos
-              legales y garantizar calidad en cada proyecto. Contamos con un
-              equipo multidisciplinario altamente calificado que aporta una
-              visión estratégica y personalizada para satisfacer las necesidades
-              de nuestros clientes. Nuestra experiencia nos permite ofrecer
-              soluciones efectivas en aeródromos y operaciones aeroportuarias,
-              asegurando el éxito de los proyectos.
-            </p>
-            <button class="btn btn-primary text-white">
-              MÁS INFORMACIÓN
-            </button>
-          </div>
+<body  id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top" ><img src="img/blanco-logo.png" href="#page-top" alt="QSL logo" width="135" height="35" /></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
+    <!-- Masthead--> 
+    <header class="masthead"  id="inicio">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <img src="img/sinfondo.png" alt="QSL Consultores Logo"  width="800" height="350"/>
+                    
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 fw-bold mb-5">Asesoramiento y Asistencia en Proyectos Aeroportuarios</p>
+                    <a class="btn btn-primary btn-xl" href="#nosotros">MÁS INFORMACIÓN</a>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <!-- Mission and Vision Section -->
+    <section class="page-section" id="nosotros">
+        <div class="container px-4 px-lg-5">
+            <!-- Mission -->
+            <div class="row gx-4 gx-lg-5 align-items-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <img src="img/MISION.jpg" alt="Mission Image" class="img-fluid rounded mb-4 mb-lg-0">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <h3 class="h4 mb-4">Misión</h3>
+                    <hr class="divider" />
+                    <p class="text-muted mb-4">"Brindar soluciones eficientes e innovadoras que respondan a las necesidades de nuestros clientes, 
+                        a través de servicios confiables y de alta calidad, generando valor y construyendo relaciones de confianza que nos conviertan en su primera opción."</p>
+                </div>
+            </div>
+            <!-- Vision -->
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-lg-6 order-lg-2 text-center">
+                    <img src="img/VISION.jpg" alt="Vision Image" class="img-fluid rounded mb-4 mb-lg-0">
+                </div>  
+                <div class="col-lg-6 order-lg-1 text-center">
+                    <h3 class="h4 mb-4">Visión</h3>
+                    <hr class="divider" />
+                    <p class="text-muted mb-4"> "Ser líderes reconocidos a nivel nacional en cada uno de los sectores que atendemos, destacándonos por la excelencia de nuestros servicios, 
+                        el cumplimiento de los más altos estándares de calidad y el fortalecimiento de alianzas estratégicas con clientes, colaboradores y socios clave."
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
+    <!-- ACERCA DE NOSOTROS -->
+    <section class="page-section bg-primary  text-white" id="services">
+        <div class="container  ">
+            <h3 class="h4 text-center mb-4">Nuestra Historia</h3>
+            <hr class="divider" />
+            <div class="text-center">
+                <p >“Desde 2005, transformando la industria aeronáutica con soluciones de calidad y seguridad operacional.”</p>
+                <p >Trayectoria de Éxito Desde su fundación, QSL S.A.C. ha liderado la transformación de la seguridad operacional en el sector aeronáutico. Fuimos pioneros en la implementación del primer Sistema de Gestión de Seguridad Operacional (SMS) en Perú, reconocido por FONAFE. Hoy, nuestro equipo de expertos en diversas especialidades continúa impulsando la excelencia en aeropuertos, aeródromos y sistemas de navegación aérea.
+                    </p>
+            
+            </div>
+        </div>
     </section>
-  </div>
+    <!-- Team Section -->
+    <section class="page-section bg-light" id="team">
+        <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+            <h2 class="mt-0">Nuestro Equipo</h2>
+            <hr class="divider mb-5" />
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="team-member text-center">
+                <img class="team-img" src="img/flores.jpg" alt="..." />
+                <h4>Víctor Luis Flores Silva</h4>
+                <p class="text-muted">Fundador y Consultor Principal</p>
+                <div >
+                    <a class="btn btn-primary btn-sm" data-bs-toggle="modal" href="#Modal1">Ver más</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="team-member text-center">
+                <img class="team-img rounded-circle" src="img/luque.jpg" alt="..." />
+                <h4>Carlos Luque Hidalgo</h4>
+                <p class="text-muted">Consultor Senior en Gestión Aeronáutica</p>
+                <a class="btn btn-primary btn-sm" data-bs-toggle="modal" href="#Modal2">Ver más</a>
+            </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="team-member text-center d-flex flex-column align-items-center justify-content-center h-100">
+                <h4>Ramiro Enrique Burga Cabrejos</h4>
+                <p class="text-muted">Consultor en Gestión de la Calidad y Procesos</p>
+                <a class="btn btn-primary btn-sm" data-bs-toggle="modal" href="#Modal3">Ver más</a>
+            </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="team-member text-center">
+                <img class="team-img rounded-circle" src="img/cisneros.jpg" alt="..." />
+                <h4>Ing. Juan Carlos Cisneros Timoteo</h4>
+                <p class="text-muted">Especialista en Gestión de Diseño y Construcción de Aeropuertos</p>
+                
+                <a class="btn btn-primary btn-sm" data-bs-toggle="modal" href="#Modal4">Ver más</a>
+            </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="team-member text-center">
+                <img class="team-img rounded-circle" src="img/macedo.jpg" alt="..." />
+                <h4>Tomás Macedo Cisneros</h4>
+                <p class="text-muted">Especialista en Diseño de Procedimientos de Vuelo (PANS-OPS)</p>
+                
+                <a class="btn btn-primary btn-sm" data-bs-toggle="modal" href="#Modal5">Ver más</a>
+            </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="team-member text-center">
+                <img class="team-img rounded-circle" src="img/vasquez.jpg" alt="..." />
+                <h4>Ricardo Clemente Vásquez Suyo</h4>
+                <p class="text-muted">Abogado Especialista en Gestión Pública y Arbitraje
+                </p>
+                <a class="btn btn-primary btn-sm" data-bs-toggle="modal" href="#Modal6">Ver más</a>
+            </div>
+            </div>
+        </div>
+        </div>
+      </section>
 
   <!-- Footer -->
-  <footer class="bg-primary text-white py-5">
-    <section class="py-3">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 text-center text-md-end">
-            <img
-              src="img/logoCompleto-blanco.png"
-              alt="QSL logo"
-              class="img-fluid"
-              width="190"
-              height="200"
-            />
-          </div>
-          <div class="col-md-6 text-center text-md-start">
-            <p>Javier Prado Este N° 560 Piso 23 Of. 2301</p>
-            <p>Tel: 739 7715 Cel: 991 660 316</p>
-            <p>www.qslconsultores.com</p>
-          </div>
+  <footer class="bg-primary text-white py-1">
+    <section class="py-3 container-footer">
+        <div class="container">
+            <div class=" row align-items-center py-0">
+                <div class="col-md-6 text-center text-md-end">
+                    <img
+                    src="img/blanco-logo.png"
+                    alt="QSL logo"
+                    width="180"
+                    height="50"
+                    />
+                </div>
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <p>Javier Prado Este N° 560 Piso 23 Of. 2301</p>
+                    <p>Tel: 739 7715 Cel: 991 660 316</p>
+                    <p>www.qslconsultores.com</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-    <div class="text-center mt-3">
+    <div class="text-center mt-0">
       <p>© Copyright qslconsultores. Todos los derechos reservados</p>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+   <!-- Core theme JS-->
+   <script src="js/scripts.js"></script>
+   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+   <!-- * *                               SB Forms JS                               * *-->
+   <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+   <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+   <!-- Font Awesome CDN -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+
 </body>
 </html>
+
+<!--modal 1 -->
+<div class="portfolio-modal modal fade" id="Modal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Botón de cierre -->
+            <div class="close-modal text-end p-3" data-bs-dismiss="modal">
+                <i class="fa-solid fa-xmark fs-3 text-dark" alt="Cerrar modal" style="cursor: pointer;"></i>
+            </div>
+            <!-- Contenido del modal -->
+            <div class="container py-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Título -->
+                            <h2 class="text-uppercase text-center mb-4">Víctor Luis Flores Silva</h2>
+                            <p class="item-intro text-muted text-center mb-4">Fundador y Consultor Principal</p>
+                            <!-- Imagen centrada -->
+                            <div class="text-center mb-4">
+                                <img class="img-fluid rounded-circle d-block mx-auto shadow-lg" src="img/flores.jpg" alt="Víctor Luis Flores Silva" width="250" height="250" />
+                            </div>
+                            <!-- Texto descriptivo -->
+                            <p class="text-justify" style="line-height: 1.8;">
+                                <strong>“Pionero en la implementación del primer SMS en Perú, liderando la excelencia operativa desde 2005.”</strong>
+                            </p>
+                            <p class="text-justify" style="line-height: 1.8;">
+                                Con más de 20 años de experiencia, ha liderado la creación del primer Sistema de Gestión de Seguridad Operacional (SMS) en Perú, reconocido por FONAFE. Especialista en <strong>ISO 9000:2000</strong> y parte del equipo de planeamiento estratégico de <strong>CORPAC</strong>.
+                            </p>
+                            <!-- Espacio inferior -->
+                            <div class="text-center mt-4">
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modal 2 -->
+<div class="portfolio-modal modal fade" id="Modal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Botón de cierre -->
+            <div class="close-modal text-end p-3" data-bs-dismiss="modal">
+                <i class="fa-solid fa-xmark fs-3 text-dark" alt="Cerrar modal" style="cursor: pointer;"></i>
+            </div>
+            
+            <!-- Contenido del modal -->
+            <div class="container py-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Título -->
+                            <h2 class="text-uppercase text-center mb-4">Carlos Luque Hidalgo</h2>
+                            <p class="item-intro text-muted text-center mb-4">Consultor Senior en Gestión Aeronáutica</p>
+                            
+                            <!-- Imagen centrada -->
+                            <div class="text-center mb-4">
+                                <img class="img-fluid rounded-circle d-block mx-auto shadow-lg" src="img/luque.jpg" alt="Carlos Luque Hidalgo" width="250" height="250" />
+                            </div>
+                            
+                            <!-- Texto descriptivo -->
+                            <p class="text-justify" style="line-height: 1.8;">
+                                <strong>“45 años impulsando la seguridad en aeródromos y certificación de aeropuertos a nivel internacional.”</strong>
+                            </p>
+                            <p class="text-justify" style="line-height: 1.8;">
+                                Experto de la <strong>OACI</strong> y miembro del <strong>SRVSOP</strong>, ha liderado procesos de certificación de aeropuertos e implementado mejoras en seguridad operacional en <strong>Perú</strong> y América Latina.
+                            </p>
+                            
+                            <!-- Espacio inferior -->
+                            <div class="text-center mt-4">
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modal 3 -->
+<div class="portfolio-modal modal fade" id="Modal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Botón de cierre -->
+            <div class="close-modal text-end p-3" data-bs-dismiss="modal">
+                <i class="fa-solid fa-xmark fs-3 text-dark" alt="Cerrar modal" style="cursor: pointer;"></i>
+            </div>
+            
+            <!-- Contenido del modal -->
+            <div class="container py-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Título -->
+                            <h2 class="text-uppercase text-center mb-4">Ramiro Enrique Burga Cabrejos</h2>
+                            <p class="item-intro text-muted text-center mb-4">Consultor en Gestión de la Calidad y Procesos</p>
+                            
+                            <!-- Texto descriptivo -->
+                            <p class="text-justify" style="line-height: 1.8;">
+                                <strong>“Innovador en la mejora de procesos estratégicos y metodologías PMBOK para la industria aeronáutica.”</strong>
+                            </p>
+                            <p class="text-justify" style="line-height: 1.8;">
+                                Licenciado en Estadística con amplia experiencia en la optimización de procesos operativos y sistemas de calidad. Ha trabajado como consultor en la <strong>OACI</strong> y es un activo promotor de proyectos de mejora continua en diversas organizaciones.
+                            </p>
+                            
+                            <!-- Espacio inferior -->
+                            <div class="text-center mt-4">
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modal 4 -->
+<div class="portfolio-modal modal fade" id="Modal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Botón de cierre -->
+            <div class="close-modal text-end p-3" data-bs-dismiss="modal">
+                <i class="fa-solid fa-xmark fs-3 text-dark" alt="Cerrar modal" style="cursor: pointer;"></i>
+            </div>
+            
+            <!-- Contenido del modal -->
+            <div class="container py-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Título -->
+                            <h2 class="text-uppercase text-center mb-4">Ing. Juan Carlos Cisneros Timoteo</h2>
+                            <p class="item-intro text-muted text-center mb-4">Especialista en Gestión de Diseño y Construcción de Aeropuertos</p>
+                            
+                            <!-- Imagen centrada -->
+                            <div class="text-center mb-4">
+                                <img class="img-fluid rounded-circle d-block mx-auto shadow-lg" src="img/cisneros.jpg" alt="Juan Carlos Cisneros Timoteo" width="250" height="250" />
+                            </div>
+                            
+                            <!-- Texto descriptivo -->
+                            <p class="text-justify" style="line-height: 1.8;">
+                                <strong>“Más de 20 años de experiencia en la construcción de infraestructuras aeroportuarias y proyectos civiles de gran envergadura.”</strong>
+                            </p>
+                            <p class="text-justify" style="line-height: 1.8;">
+                                Ingeniero civil con amplia trayectoria en planeamiento y gestión de obras civiles. Es experto en diseño y construcción de infraestructura aeroportuaria, incluyendo pistas, plataformas y posiciones de estacionamiento de aeronaves. 
+                            </p>
+                            <p class="text-justify" style="line-height: 1.8;">
+                                Ha liderado proyectos de gran impacto en el <strong>Aeropuerto Internacional Jorge Chávez</strong>, coordinando con entidades clave como la DGAC, LAP y CORPAC para garantizar el cumplimiento de la normativa <strong>OACI</strong>.
+                            </p>
+                            
+                            <!-- Botón cerrar -->
+                            <div class="text-center mt-4">
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modal 5 -->
+<div class="portfolio-modal modal fade" id="Modal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Botón de cierre -->
+            <div class="close-modal text-end p-3" data-bs-dismiss="modal">
+                <i class="fa-solid fa-xmark fs-3 text-dark" alt="Cerrar modal" style="cursor: pointer;"></i>
+            </div>
+
+            <!-- Contenido del modal -->
+            <div class="container py-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Título -->
+                            <h2 class="text-uppercase text-center mb-4">Tomás Macedo Cisneros</h2>
+                            <p class="item-intro text-muted text-center mb-4">Especialista en Diseño de Procedimientos de Vuelo (PANS-OPS)</p>
+
+                            <!-- Imagen centrada -->
+                            <div class="text-center mb-4">
+                                <img class="img-fluid rounded-circle d-block mx-auto shadow-lg" src="img/macedo.jpg" alt="Tomás Macedo Cisneros" width="250" height="250" />
+                            </div>
+
+                            <!-- Texto descriptivo -->
+                            <p class="text-justify" style="line-height: 1.8;">
+                                <strong>“30 años diseñando procedimientos de vuelo seguros y eficientes para la industria aeronáutica.”</strong>
+                            </p>
+                            <p class="text-justify" style="line-height: 1.8;">
+                                Especialista en el diseño de procedimientos de vuelo <strong>PANS-OPS</strong> con una carrera destacada en la gestión de servicios de navegación aérea. 
+                            </p>
+                            <p class="text-justify" style="line-height: 1.8;">
+                                Ha participado en la modificación del área de control terminal de Lima y en el desarrollo de procedimientos de navegación basada en performance (<strong>PBN</strong>) en coordinación con la oficina regional SAM de <strong>OACI</strong>.
+                            </p>
+                            <p class="text-justify" style="line-height: 1.8;">
+                                Su enfoque en la seguridad y la precisión ha contribuido significativamente a la optimización de los procedimientos de vuelo en diversos aeropuertos.
+                            </p>
+
+                            <!-- Botón cerrar -->
+                            <div class="text-center mt-4">
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modal 6 -->
+<div class="portfolio-modal modal fade" id="Modal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Botón de cierre -->
+            <div class="close-modal text-end p-3" data-bs-dismiss="modal">
+                <i class="fa-solid fa-xmark fs-3 text-dark" alt="Cerrar modal" style="cursor: pointer;"></i>
+            </div>
+
+            <!-- Contenido del modal -->
+            <div class="container py-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Título -->
+                            <h2 class="text-uppercase text-center mb-4">Ricardo Clemente Vásquez Suyo</h2>
+                            <p class="item-intro text-muted text-center mb-4">Abogado Especialista en Gestión Pública y Arbitraje</p>
+
+                            <!-- Imagen centrada -->
+                            <div class="text-center mb-4">
+                                <img class="img-fluid rounded-circle d-block mx-auto shadow-lg" src="img/vasquez.jpg" alt="Ricardo Clemente Vásquez Suyo" width="250" height="250" />
+                            </div>
+
+                            <!-- Texto descriptivo -->
+                            <p class="text-justify" style="line-height: 1.8;">
+                                <strong>“Experto en derecho constitucional, contrataciones públicas y resolución de conflictos en el sector público y privado.”</strong>
+                            </p>
+                            <p class="text-justify" style="line-height: 1.8;">
+                                Abogado con maestría en <strong>Derecho Constitucional</strong> y amplia experiencia en <strong>gobierno regional, descentralización y gestión pública</strong>.
+                            </p>
+                            <p class="text-justify" style="line-height: 1.8;">
+                                Se especializa en <strong>contrataciones públicas</strong>, solución de conflictos y <strong>arbitraje de derecho</strong>. Además, es Profesor en la Escuela de Ciencia Política de la <strong>UNMSM</strong> y asesor parlamentario, con un enfoque en procedimientos legislativos y de investigación.
+                            </p>
+                            <p class="text-justify" style="line-height: 1.8;">
+                                Ha liderado proyectos de gobernabilidad y gerencia política en la <strong>Pontificia Universidad Católica del Perú (PUCP)</strong> y colabora activamente en iniciativas de cooperación internacional.
+                            </p>
+
+                            <!-- Botón cerrar -->
+                            <div class="text-center mt-4">
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
