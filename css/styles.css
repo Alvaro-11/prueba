@@ -84,6 +84,8 @@
 *::after {
   box-sizing: border-box;
 }
+
+
 .content {
   display: flex;
   align-items: center;
@@ -8229,10 +8231,11 @@ textarea.form-control-lg {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
-.bg-carousel {
+.bg-background {
   --bs-bg-opacity: 1;
   background-color: rgba(233, 238, 239,0.9) !important;
 }
+
 
 .bg-dark {
   --bs-bg-opacity: 1;
