@@ -84,6 +84,41 @@
 *::after {
   box-sizing: border-box;
 }
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.image-container img {
+  border-radius: 50%;
+  max-width: 80%;
+  height: auto;
+}
+.text-container {
+  flex: 1;
+  padding: 20px;
+}
+.text-container h5 {
+  margin-bottom: 20px;
+}
+.text-container ul {
+  list-style: none;
+  padding: 0;
+}
+.text-container ul li {
+  margin-bottom: 10px;
+}
+.text-container ul li::before {
+  content: "\2713";
+  color: #007bff;
+  margin-right: 10px;
+}
 
 
 @media (prefers-reduced-motion: no-preference) {
@@ -8024,6 +8059,10 @@ textarea.form-control-lg {
 .text-decoration-line-through {
   text-decoration: line-through !important;
 }
+.contact-info p {
+  margin-bottom: 5px; /* Ajusta el margen inferior */
+  line-height: 1.7;  /* Ajusta el interlineado */
+}
 
 .text-lowercase {
   text-transform: lowercase !important;
@@ -8154,6 +8193,11 @@ textarea.form-control-lg {
 .bg-style {
   --bs-bg-opacity: 1;
   background-color: #23495a !important;
+}
+
+.bg-style-valores {
+  --bs-bg-opacity: 1;
+  background: linear-gradient(to bottom, rgba(233, 238, 239,0.9) 0%, rgba(233, 238, 239,0.9) 0%), url("img/FONDO/fondo-valores.jpg");
 }
 
 .bg-secondary {
